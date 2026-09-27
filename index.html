@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURITY THREAT INTERCEPTED // ACCESS TERMINATED</title>
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #d1d5db;
+            font-family: 'Consolas', 'Courier New', monospace;
+            padding: 40px 15px;
+            margin: 0;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            border: 1px solid #ef4444;
+            background-color: #111827;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+        }
+        .header {
+            color: #ef4444;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #374151;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .log-box {
+            background-color: #030712;
+            border: 1px solid #1f2937;
+            padding: 16px;
+            color: #10b981;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 20px 0;
+            border-left: 3px solid #ef4444;
+        }
+        .danger {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .details {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #9ca3af;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #6b7280;
+            border-top: 1px solid #1f2937;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            [!] INTRUSION PREVENTION SYSTEM — SECURITY ALERT
+        </div>
+
+        <p class="details">
+            <strong>STATUS:</strong> <span class="danger">CONNECTION TERMINATED (CODE: 403-CRIT)</span><br>
+            <strong>THREAT_PROFILE:</strong> UNIDENTIFIED_REMOTE_PAYLOAD<br>
+            <strong>INCIDENT_ID:</strong> #SEC-9842-CORP
+        </p>
+
+        <p class="details">
+            The automated intrusion mitigation system has detected and halted an unauthorized handshake request from your node. Remote endpoint telemetry and origin network details have been flagged for SIEM inspection.
+        </p>
+
+        <div class="log-box">
+            > INITIATING_DEEP_PACKET_INSPECTION... [COMPLETE]<br>
+            > HANDSHAKE_INTEGRITY: FAILED<br>
+            > MALICIOUS_SIGNATURE_MATCH: HIGH_CONFIDENCE<br>
+            > TRACE_PACKET_DISPATCHED TO UPSTREAM ROUTER... [OK]<br>
+            > ENDPOINT_STATUS: QUARANTINED
+        </div>
+
+        <p class="details" style="color:#ef4444;">
+            WARNING: Do not attempt to re-establish connection or deploy spoofed headers. Repeated attempts will trigger an automated ISP abuse report.
+        </p>
+
+        <div class="footer">
+            Edge Protection Gateway v4.11.2 // Automated Audit Log Active
+        </div>
+    </div>
+</body>
+</html>
